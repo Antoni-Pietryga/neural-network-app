@@ -1,0 +1,171 @@
+{
+	"BUILD_DIR" : "/home/antoni/Pulpit/qtest/build/NeuralNetworkAPP_autogen",
+	"CMAKE_BINARY_DIR" : "/home/antoni/Pulpit/qtest/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/antoni/Pulpit/qtest/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/antoni/Pulpit/qtest",
+	"CMAKE_EXECUTABLE" : "/usr/local/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/antoni/Pulpit/qtest/CMakeLists.txt",
+		"/home/antoni/Pulpit/qtest/build/CMakeFiles/3.20.0/CMakeSystem.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/home/antoni/Pulpit/qtest/build/CMakeFiles/3.20.0/CMakeCXXCompiler.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeGenericSystem.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake",
+		"/usr/local/share/cmake-3.20/Modules/Platform/Linux.cmake",
+		"/usr/local/share/cmake-3.20/Modules/Platform/UnixPaths.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeCXXInformation.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake",
+		"/usr/local/share/cmake-3.20/Modules/Compiler/GNU-CXX.cmake",
+		"/usr/local/share/cmake-3.20/Modules/Compiler/GNU.cmake",
+		"/usr/local/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/usr/local/share/cmake-3.20/Modules/Platform/Linux-GNU-CXX.cmake",
+		"/usr/local/share/cmake-3.20/Modules/Platform/Linux-GNU.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Torch/TorchConfigVersion.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Torch/TorchConfig.cmake",
+		"/usr/local/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/local/share/cmake-3.20/Modules/FindPackageMessage.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Caffe2/Caffe2ConfigVersion.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Caffe2/Caffe2Config.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Caffe2/public/utils.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Caffe2/public/threads.cmake",
+		"/usr/local/share/cmake-3.20/Modules/FindThreads.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CheckLibraryExists.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CheckIncludeFileCXX.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CheckCXXSourceCompiles.cmake",
+		"/usr/local/share/cmake-3.20/Modules/Internal/CheckSourceCompiles.cmake",
+		"/usr/local/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/local/share/cmake-3.20/Modules/FindPackageMessage.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Caffe2/public/mkl.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Caffe2/public/mkldnn.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake",
+		"/home/antoni/Pulpit/qtest/libtorch/share/cmake/Caffe2/Caffe2Targets-release.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeParseArguments.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"/usr/local/share/cmake-3.20/Modules/CMakeParseArguments.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/antoni/Pulpit/qtest",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/antoni/Pulpit/qtest/include/dataset.h",
+			"Mu",
+			"6YEA5652QU/moc_dataset.cpp",
+			null
+		],
+		[
+			"/home/antoni/Pulpit/qtest/include/neural_net.h",
+			"Mu",
+			"6YEA5652QU/moc_neural_net.cpp",
+			null
+		],
+		[
+			"/home/antoni/Pulpit/qtest/include/test.h",
+			"Mu",
+			"6YEA5652QU/moc_test.cpp",
+			null
+		],
+		[
+			"/home/antoni/Pulpit/qtest/include/train.h",
+			"Mu",
+			"6YEA5652QU/moc_train.cpp",
+			null
+		],
+		[
+			"/home/antoni/Pulpit/qtest/include/train_params.h",
+			"Mu",
+			"6YEA5652QU/moc_train_params.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/antoni/Pulpit/qtest/build/NeuralNetworkAPP_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/antoni/Pulpit/qtest/build/NeuralNetworkAPP_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_WIDGETS_LIB",
+		"USE_C10D_GLOO",
+		"USE_DISTRIBUTED",
+		"USE_RPC",
+		"USE_TENSORPIPE"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/antoni/Pulpit/qtest/include",
+		"/home/antoni/Pulpit/qtest/libtorch/include",
+		"/home/antoni/Pulpit/qtest/libtorch/include/torch/csrc/api/include",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include",
+		"/usr/include/c++/7",
+		"/usr/include/x86_64-linux-gnu/c++/7",
+		"/usr/include/c++/7/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/7/include",
+		"/usr/local/include",
+		"/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/local/share/cmake-3.20/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/antoni/Pulpit/qtest/build/NeuralNetworkAPP_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "/home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[ "/home/antoni/Pulpit/qtest/src/dataset.cpp", "Mu", null ],
+		[ "/home/antoni/Pulpit/qtest/src/main.cpp", "Mu", null ],
+		[ "/home/antoni/Pulpit/qtest/src/neural_net.cpp", "Mu", null ],
+		[ "/home/antoni/Pulpit/qtest/src/test.cpp", "Mu", null ],
+		[ "/home/antoni/Pulpit/qtest/src/train.cpp", "Mu", null ],
+		[ "/home/antoni/Pulpit/qtest/src/train_params.cpp", "Mu", null ]
+	],
+	"VERBOSITY" : 0
+}

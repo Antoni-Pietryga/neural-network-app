@@ -1,0 +1,4 @@
+/home/antoni/Pulpit/qtest/build/CMakeFiles/rebuild_cache.dir
+/home/antoni/Pulpit/qtest/build/CMakeFiles/edit_cache.dir
+/home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP.dir
+/home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP_autogen.dir
