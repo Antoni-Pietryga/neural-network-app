@@ -25,6 +25,17 @@ target_sources(${EXECUTABLE_NAME} PRIVATE
 					  include/train_params.h
 					  src/train.cpp
 					  src/test.cpp
+            src/main_window.cpp
+            src/main_window.h
+            src/train_window.cpp
+            src/train_window.h
+            src/ui_train_window.h
+            src/stats_window.cpp
+            src/stats_window.h
+            src/ui_stats_window.h
+            src/predict_window.cpp
+            src/predict_window.h
+            src/ui_predict_window.h
 					  include/test.h
 )
 
@@ -45,3 +56,4 @@ if(MSVC)
     include(copy_torch_dlls)
     copy_torch_dlls(${EXECUTABLE_NAME})
 endif(MSVC)
+
