@@ -46,14 +46,14 @@ void Predict_Window::on_data_button_clicked()
 void Predict_Window::on_data_button_2_clicked()
 {
     QString filename = QFileDialog::getOpenFileName(this, "Choose data", "C://");
-    ui->res_dir->setText(filename);
+    //ui->res_dir->setText(filename);
 }
 
 
 void Predict_Window::on_pushButton_2_clicked()
 {
     QString n = "None";
-    if (ui->model_dir->text() != n && ui->pred_dir->text() != n && ui->res_dir->text() !=n){
+    if (ui->model_dir->text() != n && ui->pred_dir->text() != n ){
         std::string save_path = ui->model_dir->text().toStdString();
         std::string test_root = ui->pred_dir->text().toStdString();
         //std::string save_path = ui->res_dir->text().toStdString();
