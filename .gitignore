@@ -1,3 +1,4 @@
 **/libtorch
 pytorch-cpp
 **/build
+net.pt

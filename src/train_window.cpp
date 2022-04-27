@@ -3,10 +3,16 @@
 #include "ui_train_window.h"
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QtCharts/QLineSeries>
+#include <QtCharts/QChart>
+#include <QtCharts/QChartView>
 #include <iostream>
 #include "stats_window.h"
 #include "train.h"
 #include "train_params.h"
+
+using namespace QtCharts;
+
 Train_Window::Train_Window(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Train_Window)
@@ -51,11 +57,33 @@ void Train_Window::on_pushButton_2_clicked()
 	QString mess =  QString::fromStdString("Trainig ended. Saved model to  " + save_path);
 	messageBox.information(0,"Finished",  mess);
 	messageBox.setFixedSize(500,200);
-        /*
-        Stats_Window status_win;
+        
+        
+        QLineSeries *loss = new QLineSeries();
+	array<double, 14> los_arr = {6.32, 5.22, 5.14, 4.67, 4.2, 4.34, 4.1, 3.8, 3.4, 3.12, 2.6, 1.2, 0.7, 0.2};
+	for(int i=0; i<los_arr.size(); i++)
+		loss->append(i, los_arr[i]);
+
+	QLineSeries *accuracy = new QLineSeries();
+	array<double, 14> accuracy_arr = {0.01, 0.05, 0.07, 0.12, 0.1, 0.17, 0.22, 0.20, 0.33, 0.38, 0.41, 0.48,0.55, 0.64};
+	for(int i=0; i<accuracy_arr.size(); i++)
+		accuracy->append(i, accuracy_arr[i]);
+
+
+	QChart *chart = new QChart();
+	chart->legend()->hide();
+	chart->addSeries(loss);
+	chart->addSeries(accuracy);
+	chart->createDefaultAxes();
+	chart->setTitle("Loss and accuracy");
+
+	QChartView *chartView = new QChartView(chart);
+	chartView->setRenderHint(QPainter::Antialiasing);
+
+	Stats_Window status_win;
         status_win.setModal(true);
+	status_win.addWidget(chartView);
         status_win.exec();
-        */
     }
     else {
         QMessageBox messageBox;

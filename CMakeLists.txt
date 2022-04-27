@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.14 FATAL_ERROR)
 project(NeuralNetworkAPP VERSION 1.0.0 LANGUAGES CXX)
 find_package(Torch ${PYTORCH_VERSION} EXACT QUIET PATHS "${CMAKE_SOURCE_DIR}/libtorch")
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt5Charts)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD 14)
@@ -42,7 +43,7 @@ target_sources(${EXECUTABLE_NAME} PRIVATE
 target_include_directories(${EXECUTABLE_NAME} PRIVATE include)
 
 target_link_libraries(${EXECUTABLE_NAME} ${TORCH_LIBRARIES})
-target_link_libraries (${EXECUTABLE_NAME} Qt5::Widgets)
+target_link_libraries (${EXECUTABLE_NAME} Qt5::Widgets Qt5::Charts)
 
 set_target_properties(${EXECUTABLE_NAME} PROPERTIES
   CXX_STANDARD 17
