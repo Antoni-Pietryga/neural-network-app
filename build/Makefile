@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/antoni/Pulpit/qtest
+CMAKE_SOURCE_DIR = /home/antoni/Pulpit/cpp_app/neural-network-app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/antoni/Pulpit/qtest/build
+CMAKE_BINARY_DIR = /home/antoni/Pulpit/cpp_app/neural-network-app/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/Pulpit/qtest/build/CMakeFiles /home/antoni/Pulpit/qtest/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles /home/antoni/Pulpit/cpp_app/neural-network-app/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/Pulpit/qtest/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -214,6 +214,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/main_window.o: src/main_window.cpp.o
+.PHONY : src/main_window.o
+
+# target to build an object file
+src/main_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o
+.PHONY : src/main_window.cpp.o
+
+src/main_window.i: src/main_window.cpp.i
+.PHONY : src/main_window.i
+
+# target to preprocess a source file
+src/main_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.i
+.PHONY : src/main_window.cpp.i
+
+src/main_window.s: src/main_window.cpp.s
+.PHONY : src/main_window.s
+
+# target to generate assembly for a file
+src/main_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.s
+.PHONY : src/main_window.cpp.s
+
 src/neural_net.o: src/neural_net.cpp.o
 .PHONY : src/neural_net.o
 
@@ -237,6 +261,54 @@ src/neural_net.s: src/neural_net.cpp.s
 src/neural_net.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.s
 .PHONY : src/neural_net.cpp.s
+
+src/predict_window.o: src/predict_window.cpp.o
+.PHONY : src/predict_window.o
+
+# target to build an object file
+src/predict_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o
+.PHONY : src/predict_window.cpp.o
+
+src/predict_window.i: src/predict_window.cpp.i
+.PHONY : src/predict_window.i
+
+# target to preprocess a source file
+src/predict_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.i
+.PHONY : src/predict_window.cpp.i
+
+src/predict_window.s: src/predict_window.cpp.s
+.PHONY : src/predict_window.s
+
+# target to generate assembly for a file
+src/predict_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.s
+.PHONY : src/predict_window.cpp.s
+
+src/stats_window.o: src/stats_window.cpp.o
+.PHONY : src/stats_window.o
+
+# target to build an object file
+src/stats_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o
+.PHONY : src/stats_window.cpp.o
+
+src/stats_window.i: src/stats_window.cpp.i
+.PHONY : src/stats_window.i
+
+# target to preprocess a source file
+src/stats_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.i
+.PHONY : src/stats_window.cpp.i
+
+src/stats_window.s: src/stats_window.cpp.s
+.PHONY : src/stats_window.s
+
+# target to generate assembly for a file
+src/stats_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.s
+.PHONY : src/stats_window.cpp.s
 
 src/test.o: src/test.cpp.o
 .PHONY : src/test.o
@@ -310,6 +382,30 @@ src/train_params.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.s
 .PHONY : src/train_params.cpp.s
 
+src/train_window.o: src/train_window.cpp.o
+.PHONY : src/train_window.o
+
+# target to build an object file
+src/train_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o
+.PHONY : src/train_window.cpp.o
+
+src/train_window.i: src/train_window.cpp.i
+.PHONY : src/train_window.i
+
+# target to preprocess a source file
+src/train_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.i
+.PHONY : src/train_window.cpp.i
+
+src/train_window.s: src/train_window.cpp.s
+.PHONY : src/train_window.s
+
+# target to generate assembly for a file
+src/train_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetworkAPP.dir/build.make CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.s
+.PHONY : src/train_window.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -329,9 +425,18 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/main_window.o"
+	@echo "... src/main_window.i"
+	@echo "... src/main_window.s"
 	@echo "... src/neural_net.o"
 	@echo "... src/neural_net.i"
 	@echo "... src/neural_net.s"
+	@echo "... src/predict_window.o"
+	@echo "... src/predict_window.i"
+	@echo "... src/predict_window.s"
+	@echo "... src/stats_window.o"
+	@echo "... src/stats_window.i"
+	@echo "... src/stats_window.s"
 	@echo "... src/test.o"
 	@echo "... src/test.i"
 	@echo "... src/test.s"
@@ -341,6 +446,9 @@ help:
 	@echo "... src/train_params.o"
 	@echo "... src/train_params.i"
 	@echo "... src/train_params.s"
+	@echo "... src/train_window.o"
+	@echo "... src/train_window.i"
+	@echo "... src/train_window.s"
 .PHONY : help
 
 

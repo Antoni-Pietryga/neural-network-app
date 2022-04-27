@@ -1,8 +1,7 @@
-CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o: \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/mocs_compilation.cpp \
+CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o: \
+ /home/antoni/Pulpit/cpp_app/neural-network-app/src/main_window.cpp \
  /usr/include/stdc-predef.h \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/6YEA5652QU/moc_main_window.cpp \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/6YEA5652QU/../../../include/main_window.h \
+ /home/antoni/Pulpit/cpp_app/neural-network-app/include/main_window.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -252,11 +251,42 @@ CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o:
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/6YEA5652QU/moc_predict_window.cpp \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/6YEA5652QU/../../../include/predict_window.h \
+ /home/antoni/Pulpit/cpp_app/neural-network-app/include/ui_main_window.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+ /usr/include/c++/7/functional /usr/include/c++/7/bits/std_function.h \
+ /usr/include/c++/7/bits/refwrap.h /usr/include/c++/7/unordered_map \
+ /usr/include/c++/7/bits/hashtable.h \
+ /usr/include/c++/7/bits/hashtable_policy.h \
+ /usr/include/c++/7/bits/unordered_map.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenubar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStatusBar \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstatusbar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
+ /home/antoni/Pulpit/cpp_app/neural-network-app/include/predict_window.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/6YEA5652QU/moc_stats_window.cpp \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/6YEA5652QU/../../../include/stats_window.h \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/6YEA5652QU/moc_train_window.cpp \
- /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/6YEA5652QU/../../../include/train_window.h
+ /home/antoni/Pulpit/cpp_app/neural-network-app/include/train_window.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
