@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUSE_C10D_GLOO -DUSE_DISTRIBUTED -DUSE_RPC -DUSE_TENSORPIPE
 
-CXX_INCLUDES = -I/home/antoni/Pulpit/qtest/build/NeuralNetworkAPP_autogen/include -I/home/antoni/Pulpit/qtest/include -isystem /home/antoni/Pulpit/qtest/libtorch/include -isystem /home/antoni/Pulpit/qtest/libtorch/include/torch/csrc/api/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
+CXX_INCLUDES = -I/home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/include -I/home/antoni/Pulpit/cpp_app/neural-network-app/include -isystem /home/antoni/Pulpit/cpp_app/neural-network-app/libtorch/include -isystem /home/antoni/Pulpit/cpp_app/neural-network-app/libtorch/include/torch/csrc/api/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++
 
 CXX_FLAGS = -D_GLIBCXX_USE_CXX11_ABI=0 -fPIC -std=gnu++1z
 

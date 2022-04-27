@@ -6,13 +6,13 @@ Test::Test(string test_path_, const TrainParameters &params_, string model_path_
 	model_path = model_path_;
 }
 
-void Test::test(){
+float Test::test(){
 		auto test_data = Data(test_path);
 		auto test_dataset = test_data.map(torch::data::transforms::Stack<>());
 		auto test_loader = torch::data::make_data_loader<torch::data::samplers::RandomSampler>(
 			std::move(test_dataset), params.batch_size);
 		auto num_test_samples = test_data.targets().sizes()[0];
-		
+
 		NeuralNet net(params.input_size, params.hidden_size, params.num_classes);
 		torch::load(net, model_path);
 		double running_loss = 0.0;
@@ -32,7 +32,7 @@ void Test::test(){
 			auto prediction = output.argmax(1);
 
 			num_correct += prediction.eq(target).sum().item<int64_t>();
-			c += 1;	
+			c += 1;
 			if(c == 2)
 				break;
 	    	}
@@ -44,5 +44,5 @@ void Test::test(){
 	    	auto test_sample_mean_loss = running_loss / num_test_samples;
 
 	    	std::cout << "Testset - Loss: " << test_sample_mean_loss << ", Accuracy: " << test_accuracy << '\n';
-
+				return test_accuracy;
 		}

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/antoni/Pulpit/qtest
+CMAKE_SOURCE_DIR = /home/antoni/Pulpit/cpp_app/neural-network-app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/antoni/Pulpit/qtest/build
+CMAKE_BINARY_DIR = /home/antoni/Pulpit/cpp_app/neural-network-app/build
 
 # Utility rule file for NeuralNetworkAPP_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/NeuralNetworkAPP_autogen.dir/compiler_depend.make
 include CMakeFiles/NeuralNetworkAPP_autogen.dir/progress.make
 
 CMakeFiles/NeuralNetworkAPP_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target NeuralNetworkAPP"
-	/usr/local/bin/cmake -E cmake_autogen /home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target NeuralNetworkAPP"
+	/usr/local/bin/cmake -E cmake_autogen /home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles/NeuralNetworkAPP_autogen.dir/AutogenInfo.json ""
 
 NeuralNetworkAPP_autogen: CMakeFiles/NeuralNetworkAPP_autogen
 NeuralNetworkAPP_autogen: CMakeFiles/NeuralNetworkAPP_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/NeuralNetworkAPP_autogen.dir/clean:
 .PHONY : CMakeFiles/NeuralNetworkAPP_autogen.dir/clean
 
 CMakeFiles/NeuralNetworkAPP_autogen.dir/depend:
-	cd /home/antoni/Pulpit/qtest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/antoni/Pulpit/qtest /home/antoni/Pulpit/qtest /home/antoni/Pulpit/qtest/build /home/antoni/Pulpit/qtest/build /home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/antoni/Pulpit/cpp_app/neural-network-app/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/antoni/Pulpit/cpp_app/neural-network-app /home/antoni/Pulpit/cpp_app/neural-network-app /home/antoni/Pulpit/cpp_app/neural-network-app/build /home/antoni/Pulpit/cpp_app/neural-network-app/build /home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles/NeuralNetworkAPP_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NeuralNetworkAPP_autogen.dir/depend
 

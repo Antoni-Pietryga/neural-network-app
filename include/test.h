@@ -10,5 +10,5 @@ public:
 	string model_path;
 	
 	explicit Test(string test_path_, const TrainParameters &params_, string model_path_);
-	void test();
+	float test();
 };

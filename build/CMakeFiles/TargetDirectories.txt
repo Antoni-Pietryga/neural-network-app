@@ -1,4 +1,4 @@
-/home/antoni/Pulpit/qtest/build/CMakeFiles/rebuild_cache.dir
-/home/antoni/Pulpit/qtest/build/CMakeFiles/edit_cache.dir
-/home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP.dir
-/home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP_autogen.dir
+/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles/rebuild_cache.dir
+/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles/edit_cache.dir
+/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles/NeuralNetworkAPP.dir
+/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles/NeuralNetworkAPP_autogen.dir

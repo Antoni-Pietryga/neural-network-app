@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/antoni/Pulpit/qtest
+CMAKE_SOURCE_DIR = /home/antoni/Pulpit/cpp_app/neural-network-app
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/antoni/Pulpit/qtest/build
+CMAKE_BINARY_DIR = /home/antoni/Pulpit/cpp_app/neural-network-app/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/NeuralNetworkAPP.dir/depend.make
@@ -72,100 +72,156 @@ include CMakeFiles/NeuralNetworkAPP.dir/flags.make
 CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
 CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o: NeuralNetworkAPP_autogen/mocs_compilation.cpp
 CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o -c /home/antoni/Pulpit/qtest/build/NeuralNetworkAPP_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/mocs_compilation.cpp
 
 CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/qtest/build/NeuralNetworkAPP_autogen/mocs_compilation.cpp > CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/mocs_compilation.cpp > CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/qtest/build/NeuralNetworkAPP_autogen/mocs_compilation.cpp -o CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/build/NeuralNetworkAPP_autogen/mocs_compilation.cpp -o CMakeFiles/NeuralNetworkAPP.dir/NeuralNetworkAPP_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
 CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o -c /home/antoni/Pulpit/qtest/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/main.cpp
 
 CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/qtest/src/main.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/main.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.i
 
 CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/qtest/src/main.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/main.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/main.cpp.s
 
 CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
 CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o: ../src/train_params.cpp
 CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o -c /home/antoni/Pulpit/qtest/src/train_params.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/train_params.cpp
 
 CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/qtest/src/train_params.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/train_params.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.i
 
 CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/qtest/src/train_params.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/train_params.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/train_params.cpp.s
 
 CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
 CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o: ../src/neural_net.cpp
 CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o -c /home/antoni/Pulpit/qtest/src/neural_net.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/neural_net.cpp
 
 CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/qtest/src/neural_net.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/neural_net.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.i
 
 CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/qtest/src/neural_net.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/neural_net.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.s
 
 CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
 CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o: ../src/dataset.cpp
 CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o -c /home/antoni/Pulpit/qtest/src/dataset.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/dataset.cpp
 
 CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/qtest/src/dataset.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/dataset.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.i
 
 CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/qtest/src/dataset.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/dataset.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.s
 
 CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
 CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o: ../src/train.cpp
 CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o -c /home/antoni/Pulpit/qtest/src/train.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/train.cpp
 
 CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/qtest/src/train.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/train.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.i
 
 CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/qtest/src/train.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/train.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.s
 
 CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
 CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o: ../src/test.cpp
 CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o -c /home/antoni/Pulpit/qtest/src/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/test.cpp
 
 CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/qtest/src/test.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/test.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.i
 
 CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/qtest/src/test.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/test.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.s
+
+CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
+CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o: ../src/main_window.cpp
+CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/main_window.cpp
+
+CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/main_window.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.i
+
+CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/main_window.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.s
+
+CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
+CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o: ../src/train_window.cpp
+CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/train_window.cpp
+
+CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/train_window.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.i
+
+CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/train_window.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.s
+
+CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
+CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o: ../src/stats_window.cpp
+CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/stats_window.cpp
+
+CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/stats_window.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.i
+
+CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/stats_window.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.s
+
+CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/flags.make
+CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o: ../src/predict_window.cpp
+CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o: CMakeFiles/NeuralNetworkAPP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o -MF CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o.d -o CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o -c /home/antoni/Pulpit/cpp_app/neural-network-app/src/predict_window.cpp
+
+CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/antoni/Pulpit/cpp_app/neural-network-app/src/predict_window.cpp > CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.i
+
+CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/antoni/Pulpit/cpp_app/neural-network-app/src/predict_window.cpp -o CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.s
 
 # Object files for target NeuralNetworkAPP
 NeuralNetworkAPP_OBJECTS = \
@@ -175,7 +231,11 @@ NeuralNetworkAPP_OBJECTS = \
 "CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o" \
 "CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o" \
 "CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o" \
-"CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o"
+"CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o" \
+"CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o" \
+"CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o" \
+"CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o" \
+"CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o"
 
 # External object files for target NeuralNetworkAPP
 NeuralNetworkAPP_EXTERNAL_OBJECTS =
@@ -187,6 +247,10 @@ NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/src/neural_net.cpp.o
 NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/src/dataset.cpp.o
 NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/src/train.cpp.o
 NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/src/test.cpp.o
+NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/src/main_window.cpp.o
+NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/src/train_window.cpp.o
+NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/src/stats_window.cpp.o
+NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/src/predict_window.cpp.o
 NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/build.make
 NeuralNetworkAPP: ../libtorch/lib/libtorch.so
 NeuralNetworkAPP: ../libtorch/lib/libc10.so
@@ -196,7 +260,7 @@ NeuralNetworkAPP: ../libtorch/lib/libc10.so
 NeuralNetworkAPP: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
 NeuralNetworkAPP: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 NeuralNetworkAPP: CMakeFiles/NeuralNetworkAPP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/antoni/Pulpit/qtest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable NeuralNetworkAPP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable NeuralNetworkAPP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NeuralNetworkAPP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +272,6 @@ CMakeFiles/NeuralNetworkAPP.dir/clean:
 .PHONY : CMakeFiles/NeuralNetworkAPP.dir/clean
 
 CMakeFiles/NeuralNetworkAPP.dir/depend:
-	cd /home/antoni/Pulpit/qtest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/antoni/Pulpit/qtest /home/antoni/Pulpit/qtest /home/antoni/Pulpit/qtest/build /home/antoni/Pulpit/qtest/build /home/antoni/Pulpit/qtest/build/CMakeFiles/NeuralNetworkAPP.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/antoni/Pulpit/cpp_app/neural-network-app/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/antoni/Pulpit/cpp_app/neural-network-app /home/antoni/Pulpit/cpp_app/neural-network-app /home/antoni/Pulpit/cpp_app/neural-network-app/build /home/antoni/Pulpit/cpp_app/neural-network-app/build /home/antoni/Pulpit/cpp_app/neural-network-app/build/CMakeFiles/NeuralNetworkAPP.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NeuralNetworkAPP.dir/depend
 
