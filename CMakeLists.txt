@@ -26,16 +26,16 @@ target_sources(${EXECUTABLE_NAME} PRIVATE
 					  src/train.cpp
 					  src/test.cpp
             src/main_window.cpp
-            src/main_window.h
+            include/main_window.h
             src/train_window.cpp
-            src/train_window.h
-            src/ui_train_window.h
+            include/train_window.h
+            include/ui_train_window.h
             src/stats_window.cpp
-            src/stats_window.h
-            src/ui_stats_window.h
+            include/stats_window.h
+            include/ui_stats_window.h
             src/predict_window.cpp
-            src/predict_window.h
-            src/ui_predict_window.h
+            include/predict_window.h
+            include/ui_predict_window.h
 					  include/test.h
 )
 
