@@ -70,7 +70,7 @@ public:
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         progressBar = new QProgressBar(layoutWidget);
         progressBar->setObjectName(QString::fromUtf8("progressBar"));
-        progressBar->setValue(24);
+        progressBar->setValue(0);
 
         verticalLayout->addWidget(progressBar);
 
@@ -106,12 +106,15 @@ public:
         lineEdit = new QLineEdit(Train_Window);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
         lineEdit->setGeometry(QRect(160, 400, 113, 28));
+        lineEdit->setText("0.001");
         lineEdit_2 = new QLineEdit(Train_Window);
         lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
         lineEdit_2->setGeometry(QRect(230, 130, 113, 28));
+        lineEdit_2->setText("30");
         lineEdit_3 = new QLineEdit(Train_Window);
         lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
         lineEdit_3->setGeometry(QRect(230, 170, 113, 28));
+        lineEdit_3->setText("20");
         textBrowser = new QTextBrowser(Train_Window);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setGeometry(QRect(780, 50, 411, 541));
