@@ -38,16 +38,19 @@ void Train_Window::on_pushButton_2_clicked()
         std::string dataset_dir = ui->pred_dir->text().toStdString();
         //Run trainig
         TrainParameters params = TrainParameters(first_layer_neurons, second_layer_neurons, epochs, lr);
-          	std::cout << "Training...\n";
+        std::cout << "Training...\n";
+	ui->textBrowser->append(QStringLiteral("Training..."));
+	qApp->processEvents();
       	string train_root = dataset_dir; //"../data/train.csv";
       	string save_path = "../net.pt";
       	Train train = Train(train_root, params, save_path, ui);
       	train.train();
-          	std::cout << "Training finished!\n\n";
-
-        //for(int i=1; i<=epochs; i++){
-
-        //}
+        std::cout << "Training finished!\n\n";
+	ui->textBrowser->append(QStringLiteral("Training finished..."));
+	QMessageBox messageBox;
+	QString mess =  QString::fromStdString("Trainig ended. Saved model to  " + save_path);
+	messageBox.information(0,"Finished",  mess);
+	messageBox.setFixedSize(500,200);
         /*
         Stats_Window status_win;
         status_win.setModal(true);
