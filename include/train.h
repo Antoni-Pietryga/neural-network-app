@@ -5,8 +5,10 @@
 #include "train_params.h"
 #include "ui_train_window.h"
 #include <QFileDialog>
-using namespace std;
+#include <tuple>
+#include <vector>
 
+using namespace std;
 
 class Train{
 public:
@@ -15,6 +17,6 @@ public:
 	string model_save_path;
 	Ui_Train_Window *ui;
 	explicit Train(string train_path_, const TrainParameters &params_, string model_save_path_, Ui_Train_Window *ui);
-	void train();
+	tuple<vector<double>, vector<double>> train();
 
 };

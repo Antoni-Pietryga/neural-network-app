@@ -62,6 +62,7 @@ public:
         pred_dir = new QLabel(Train_Window);
         pred_dir->setObjectName(QString::fromUtf8("pred_dir"));
         pred_dir->setGeometry(QRect(190, 450, 531, 31));
+        pred_dir->setText("../data/train.csv");
         layoutWidget = new QWidget(Train_Window);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
         layoutWidget->setGeometry(QRect(40, 300, 711, 55));
@@ -134,7 +135,7 @@ public:
         data_button->setText(QApplication::translate("Train", "Dataset directory", nullptr));
         pushButton->setText(QApplication::translate("Train", "< Back to mode selector", nullptr));
         pushButton_2->setText(QApplication::translate("Train", "Train model >", nullptr));
-        pred_dir->setText(QApplication::translate("Train", "None", nullptr));
+        pred_dir->setText(QApplication::translate("Train", "../data/train.csv", nullptr));
         label_4->setText(QApplication::translate("Train", "Traning parameters", nullptr));
         label_5->setText(QApplication::translate("Train", "Learning rate:", nullptr));
         label_6->setText(QApplication::translate("Train", "Number of epochs:", nullptr));
