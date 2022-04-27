@@ -9,7 +9,8 @@
 #include <iostream>
 #include "stats_window.h"
 #include "train.h"
-#include "train_params.h"
+#include <tuple>
+#include <vector>
 
 using namespace QtCharts;
 
@@ -50,7 +51,9 @@ void Train_Window::on_pushButton_2_clicked()
       	string train_root = dataset_dir; //"../data/train.csv";
       	string save_path = "../net.pt";
       	Train train = Train(train_root, params, save_path, ui);
-      	train.train();
+      	auto loss_accuracy = train.train();
+	auto loss_data = get<0>(loss_accuracy);
+	auto accuracy_data = get<1>(loss_accuracy);
         std::cout << "Training finished!\n\n";
 	ui->textBrowser->append(QStringLiteral("Training finished..."));
 	QMessageBox messageBox;
@@ -59,7 +62,7 @@ void Train_Window::on_pushButton_2_clicked()
 	messageBox.setFixedSize(500,200);
         
         
-        QLineSeries *loss = new QLineSeries();
+        /*QLineSeries *loss = new QLineSeries();
 	array<double, 14> los_arr = {6.32, 5.22, 5.14, 4.67, 4.2, 4.34, 4.1, 3.8, 3.4, 3.12, 2.6, 1.2, 0.7, 0.2};
 	for(int i=0; i<los_arr.size(); i++)
 		loss->append(i, los_arr[i]);
@@ -83,7 +86,7 @@ void Train_Window::on_pushButton_2_clicked()
 	Stats_Window status_win;
         status_win.setModal(true);
 	status_win.addWidget(chartView);
-        status_win.exec();
+        status_win.exec();*/
     }
     else {
         QMessageBox messageBox;
