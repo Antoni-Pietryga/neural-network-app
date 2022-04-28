@@ -9,7 +9,7 @@ namespace Ui {
 class Stats_Window;
 }
 /** @brief The class responsible for displaying
-the results of the traininf of neural network
+the results of the training of neural network
 
 */
 class Stats_Window : public QDialog
