@@ -20,9 +20,30 @@ Collaboration diagram for Neural\+Net\+Impl\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classNeuralNetImpl_aaccb7e8311ba6c9647824f86dfb627bc}{Neural\+Net\+Impl} (int64\+\_\+t input\+\_\+size, int64\+\_\+t hidden\+\_\+size, int64\+\_\+t num\+\_\+classes=2)
+\hyperlink{classNeuralNetImpl_adc642ff317e5b828880aea3df16a4b23}{Neural\+Net\+Impl} (int64\+\_\+t input\+\_\+size, int64\+\_\+t hidden\+\_\+size\+\_\+, int64\+\_\+t num\+\_\+classes=2)
 \item 
 torch\+::\+Tensor \hyperlink{classNeuralNetImpl_ae392a0bba51173dd708f8522ece17dae}{forward} (torch\+::\+Tensor x)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classNeuralNetImpl_a4ad265cf6b7c23b1ac2bf35ed34709de}\label{classNeuralNetImpl_a4ad265cf6b7c23b1ac2bf35ed34709de}} 
+torch\+::nn\+::\+Conv2d {\bfseries conv1} \{nullptr\}
+\item 
+\mbox{\Hypertarget{classNeuralNetImpl_a7f2fdaa5cd22b7ee94a3a57ef70e0dc8}\label{classNeuralNetImpl_a7f2fdaa5cd22b7ee94a3a57ef70e0dc8}} 
+torch\+::nn\+::\+Conv2d {\bfseries conv2} \{nullptr\}
+\item 
+\mbox{\Hypertarget{classNeuralNetImpl_ab0d179f56558cfcb3d6aba6caa9c80f8}\label{classNeuralNetImpl_ab0d179f56558cfcb3d6aba6caa9c80f8}} 
+torch\+::nn\+::\+Dropout {\bfseries conv2\+\_\+drop} \{nullptr\}
+\item 
+\mbox{\Hypertarget{classNeuralNetImpl_a470a2d9ea6d8a8dc48885389126b347a}\label{classNeuralNetImpl_a470a2d9ea6d8a8dc48885389126b347a}} 
+torch\+::nn\+::\+Linear {\bfseries fc1} \{nullptr\}
+\item 
+\mbox{\Hypertarget{classNeuralNetImpl_a07e4353d9e399ceaca1cc4de5c08912f}\label{classNeuralNetImpl_a07e4353d9e399ceaca1cc4de5c08912f}} 
+torch\+::nn\+::\+Linear {\bfseries fc2} \{nullptr\}
+\item 
+\mbox{\Hypertarget{classNeuralNetImpl_ad02e9e8ad7472c0ff5da7138c199f921}\label{classNeuralNetImpl_ad02e9e8ad7472c0ff5da7138c199f921}} 
+int64\+\_\+t {\bfseries hidden\+\_\+size}
 \end{DoxyCompactItemize}
 
 
@@ -30,11 +51,11 @@ torch\+::\+Tensor \hyperlink{classNeuralNetImpl_ae392a0bba51173dd708f8522ece17da
 The class responsible for Neural network implementation. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classNeuralNetImpl_aaccb7e8311ba6c9647824f86dfb627bc}\label{classNeuralNetImpl_aaccb7e8311ba6c9647824f86dfb627bc}} 
+\mbox{\Hypertarget{classNeuralNetImpl_adc642ff317e5b828880aea3df16a4b23}\label{classNeuralNetImpl_adc642ff317e5b828880aea3df16a4b23}} 
 \index{Neural\+Net\+Impl@{Neural\+Net\+Impl}!Neural\+Net\+Impl@{Neural\+Net\+Impl}}
 \index{Neural\+Net\+Impl@{Neural\+Net\+Impl}!Neural\+Net\+Impl@{Neural\+Net\+Impl}}
 \subsubsection{\texorpdfstring{Neural\+Net\+Impl()}{NeuralNetImpl()}}
-{\footnotesize\ttfamily Neural\+Net\+Impl\+::\+Neural\+Net\+Impl (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{input\+\_\+size,  }\item[{int64\+\_\+t}]{hidden\+\_\+size,  }\item[{int64\+\_\+t}]{num\+\_\+classes = {\ttfamily 2} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Neural\+Net\+Impl\+::\+Neural\+Net\+Impl (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{input\+\_\+size,  }\item[{int64\+\_\+t}]{hidden\+\_\+size\+\_\+,  }\item[{int64\+\_\+t}]{num\+\_\+classes = {\ttfamily 2} }\end{DoxyParamCaption})}
 
 Constructor. Initialize path and mode. 
 \begin{DoxyParams}{Parameters}

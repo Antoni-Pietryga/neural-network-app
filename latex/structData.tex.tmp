@@ -39,6 +39,18 @@ bool \hyperlink{structData_af7d0fb3fdcd98b32f1ecb1161ce425c4}{is\+\_\+train} () 
 \item 
 const torch\+::\+Tensor \& \hyperlink{structData_addda7f332171ec3272cdbdf979a7e37c}{targets} () const
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structData_a63bdc7bacb13189c39234188a04f5667}\label{structData_a63bdc7bacb13189c39234188a04f5667}} 
+torch\+::\+Tensor {\bfseries values\+\_\+}
+\item 
+\mbox{\Hypertarget{structData_ad5ed7145bfcb79db9a5b5478bd776964}\label{structData_ad5ed7145bfcb79db9a5b5478bd776964}} 
+torch\+::\+Tensor {\bfseries targets\+\_\+}
+\item 
+\mbox{\Hypertarget{structData_a2d7cea01aa014c73f230fd7e7083151e}\label{structData_a2d7cea01aa014c73f230fd7e7083151e}} 
+\hyperlink{structData_a51d5a492045341d0f509c115b22993aa}{Mode} {\bfseries mode\+\_\+}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}

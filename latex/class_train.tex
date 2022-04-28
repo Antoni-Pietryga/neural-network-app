@@ -1,0 +1,75 @@
+\hypertarget{class_train}{}\section{Train Class Reference}
+\label{class_train}\index{Train@{Train}}
+
+
+The class responsible for train pipeline.  
+
+
+
+
+{\ttfamily \#include $<$train.\+h$>$}
+
+
+
+Inheritance diagram for Train\+:
+% FIG 0
+
+
+Collaboration diagram for Train\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_train_a4b75a671b226dea5fb805ae78861bf57}{Train} (string train\+\_\+path\+\_\+, const \hyperlink{struct_train_parameters}{Train\+Parameters} \&params\+\_\+, string model\+\_\+save\+\_\+path\+\_\+, \hyperlink{class_ui___train___window}{Ui\+\_\+\+Train\+\_\+\+Window} $\ast$ui)
+\item 
+tuple$<$ vector$<$ double $>$, vector$<$ double $>$ $>$ \hyperlink{class_train_a259b2edda87fb6b17adfb71527a2de94}{train} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_train_aaa05790b87b9ac398df707f7d5d72c27}\label{class_train_aaa05790b87b9ac398df707f7d5d72c27}} 
+string {\bfseries train\+\_\+path}
+\item 
+\mbox{\Hypertarget{class_train_a85dfff76ac49fbdac1c41c70b80f45cd}\label{class_train_a85dfff76ac49fbdac1c41c70b80f45cd}} 
+\hyperlink{struct_train_parameters}{Train\+Parameters} {\bfseries params} = \hyperlink{struct_train_parameters}{Train\+Parameters}(30, 20, 50, 0.\+001)
+\item 
+\mbox{\Hypertarget{class_train_a7593e27a8c3072136f3e90b3f9dfcd3f}\label{class_train_a7593e27a8c3072136f3e90b3f9dfcd3f}} 
+string {\bfseries model\+\_\+save\+\_\+path}
+\item 
+\mbox{\Hypertarget{class_train_a6f9f0b7594680b2336a99d38f6c48da4}\label{class_train_a6f9f0b7594680b2336a99d38f6c48da4}} 
+\hyperlink{class_ui___train___window}{Ui\+\_\+\+Train\+\_\+\+Window} $\ast$ {\bfseries ui}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The class responsible for train pipeline. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_train_a4b75a671b226dea5fb805ae78861bf57}\label{class_train_a4b75a671b226dea5fb805ae78861bf57}} 
+\index{Train@{Train}!Train@{Train}}
+\index{Train@{Train}!Train@{Train}}
+\subsubsection{\texorpdfstring{Train()}{Train()}}
+{\footnotesize\ttfamily Train\+::\+Train (\begin{DoxyParamCaption}\item[{string}]{train\+\_\+path\+\_\+,  }\item[{const \hyperlink{struct_train_parameters}{Train\+Parameters} \&}]{params\+\_\+,  }\item[{string}]{model\+\_\+save\+\_\+path\+\_\+,  }\item[{\hyperlink{class_ui___train___window}{Ui\+\_\+\+Train\+\_\+\+Window} $\ast$}]{ui }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor. Initialize train\+\_\+path, params and model\+\_\+path. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_train_a259b2edda87fb6b17adfb71527a2de94}\label{class_train_a259b2edda87fb6b17adfb71527a2de94}} 
+\index{Train@{Train}!train@{train}}
+\index{train@{train}!Train@{Train}}
+\subsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily tuple$<$vector$<$double$>$, vector$<$double$>$ $>$ Train\+::train (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Run train on selected file and given parameters. \begin{DoxyReturn}{Returns}
+tuple of calculated loss and accuracy. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_train_base}{Train\+Base}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/train.\+h\end{DoxyCompactItemize}

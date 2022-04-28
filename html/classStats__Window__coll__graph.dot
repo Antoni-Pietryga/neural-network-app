@@ -5,4 +5,8 @@ digraph "Stats_Window"
   Node2 [label="Stats_Window",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="QDialog",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ui" ,fontname="Helvetica"];
+  Node4 [label="Ui::Stats_Window",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUi_1_1Stats__Window.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Ui_Stats_Window",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classUi__Stats__Window.html"];
 }
