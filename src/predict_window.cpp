@@ -22,11 +22,6 @@ Predict_Window::~Predict_Window()
 }
 
 
-void Predict_Window::on_pushButton_clicked()
-{
-
-}
-
 
 void Predict_Window::on_model_button_clicked()
 {
@@ -42,12 +37,6 @@ void Predict_Window::on_data_button_clicked()
     ui->pred_dir->setText(filename);
 }
 
-
-void Predict_Window::on_data_button_2_clicked()
-{
-    QString filename = QFileDialog::getOpenFileName(this, "Choose data", "C://");
-    //ui->res_dir->setText(filename);
-}
 
 
 void Predict_Window::on_pushButton_2_clicked()
@@ -79,3 +68,4 @@ void Predict_Window::on_pushButton_2_clicked()
         messageBox.setFixedSize(500,200);
     }
 }
+
