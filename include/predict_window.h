@@ -6,7 +6,8 @@
 namespace Ui {
 class Predict_Window;
 }
-
+/** @brief The class responsible for start model prediction
+*/
 class Predict_Window : public QDialog
 {
     Q_OBJECT
@@ -16,14 +17,14 @@ public:
     ~Predict_Window();
 
 private slots:
-    void on_pushButton_clicked();
-
+    /** Method let user pick directory of neural network model
+    */
     void on_model_button_clicked();
-
+    /** Method let user pick directory of test data
+    */
     void on_data_button_clicked();
-
-    void on_data_button_2_clicked();
-
+    /** Method runs prediction
+    */
     void on_pushButton_2_clicked();
 
 private:
