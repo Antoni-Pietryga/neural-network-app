@@ -5,7 +5,10 @@
 namespace Ui {
 class Train_Window;
 }
+/** @brief The class responsible for displaying
+    train window, choose parameters and start trainig of neural network
 
+*/
 class Train_Window : public QDialog
 {
     Q_OBJECT
@@ -15,9 +18,13 @@ public:
     ~Train_Window();
 
 private slots:
-
+    /**
+    Pick training data
+    */
     void on_data_button_clicked();
-
+    /**
+    	Start model trainig after clicked button
+    */
     void on_pushButton_2_clicked();
 
 private:
