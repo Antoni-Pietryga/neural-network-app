@@ -1,0 +1,113 @@
+\hypertarget{structData}{}\section{Data Struct Reference}
+\label{structData}\index{Data@{Data}}
+
+
+The class responsible for holding data container.  
+
+
+
+
+{\ttfamily \#include $<$dataset.\+h$>$}
+
+
+
+Inheritance diagram for Data\+:
+% FIG 0
+
+
+Collaboration diagram for Data\+:
+% FIG 1
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{structData_a51d5a492045341d0f509c115b22993aa}{Mode} \{ {\bfseries k\+Train}, 
+{\bfseries k\+Test}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structData_a024d82635e764c8da276529da22646ba}{Data} (const std\+::string \&root, \hyperlink{structData_a51d5a492045341d0f509c115b22993aa}{Mode} mode=Mode\+::k\+Train)
+\item 
+torch\+::data\+::\+Example \hyperlink{structData_a6b9e44125badc056f92504222d14e93d}{get} (size\+\_\+t index) override
+\item 
+torch\+::optional$<$ size\+\_\+t $>$ \hyperlink{structData_a85bb35c90a17737253a726009842fe9d}{size} () const override
+\item 
+const torch\+::\+Tensor \& \hyperlink{structData_a3617297adc73b343a96a0ee0992b8f7a}{values} () const
+\item 
+bool \hyperlink{structData_af7d0fb3fdcd98b32f1ecb1161ce425c4}{is\+\_\+train} () const noexcept
+\item 
+const torch\+::\+Tensor \& \hyperlink{structData_addda7f332171ec3272cdbdf979a7e37c}{targets} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class responsible for holding data container. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structData_a51d5a492045341d0f509c115b22993aa}\label{structData_a51d5a492045341d0f509c115b22993aa}} 
+\index{Data@{Data}!Mode@{Mode}}
+\index{Mode@{Mode}!Data@{Data}}
+\subsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily enum \hyperlink{structData_a51d5a492045341d0f509c115b22993aa}{Data\+::\+Mode}}
+
+The mode in which the dataset is loaded 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structData_a024d82635e764c8da276529da22646ba}\label{structData_a024d82635e764c8da276529da22646ba}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\subsubsection{\texorpdfstring{Data()}{Data()}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{root,  }\item[{\hyperlink{structData_a51d5a492045341d0f509c115b22993aa}{Mode}}]{mode = {\ttfamily Mode\+:\+:kTrain} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor. Initialize path and mode. 
+\begin{DoxyParams}{Parameters}
+{\em root} & -\/ file path. \\
+\hline
+{\em mode} & -\/ enum value, mode of dataset. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structData_a6b9e44125badc056f92504222d14e93d}\label{structData_a6b9e44125badc056f92504222d14e93d}} 
+\index{Data@{Data}!get@{get}}
+\index{get@{get}!Data@{Data}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily torch\+::data\+::\+Example Data\+::get (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+Returns the {\ttfamily Example} at the given {\ttfamily index}. 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index of tensor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structData_af7d0fb3fdcd98b32f1ecb1161ce425c4}\label{structData_af7d0fb3fdcd98b32f1ecb1161ce425c4}} 
+\index{Data@{Data}!is\+\_\+train@{is\+\_\+train}}
+\index{is\+\_\+train@{is\+\_\+train}!Data@{Data}}
+\subsubsection{\texorpdfstring{is\+\_\+train()}{is\_train()}}
+{\footnotesize\ttfamily bool Data\+::is\+\_\+train (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+Returns true if this is the training mode. \mbox{\Hypertarget{structData_a85bb35c90a17737253a726009842fe9d}\label{structData_a85bb35c90a17737253a726009842fe9d}} 
+\index{Data@{Data}!size@{size}}
+\index{size@{size}!Data@{Data}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily torch\+::optional$<$ size\+\_\+t $>$ Data\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+Returns the size of the dataset. \mbox{\Hypertarget{structData_addda7f332171ec3272cdbdf979a7e37c}\label{structData_addda7f332171ec3272cdbdf979a7e37c}} 
+\index{Data@{Data}!targets@{targets}}
+\index{targets@{targets}!Data@{Data}}
+\subsubsection{\texorpdfstring{targets()}{targets()}}
+{\footnotesize\ttfamily const torch\+::\+Tensor \& Data\+::targets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns all targets stacked into a single tensor. \mbox{\Hypertarget{structData_a3617297adc73b343a96a0ee0992b8f7a}\label{structData_a3617297adc73b343a96a0ee0992b8f7a}} 
+\index{Data@{Data}!values@{values}}
+\index{values@{values}!Data@{Data}}
+\subsubsection{\texorpdfstring{values()}{values()}}
+{\footnotesize\ttfamily const torch\+::\+Tensor \& Data\+::values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns all values stacked into a single tensor. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/dataset.\+h\item 
+src/dataset.\+cpp\end{DoxyCompactItemize}

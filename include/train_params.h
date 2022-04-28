@@ -1,6 +1,7 @@
 #ifndef TRAIN_PARAMETERS_
 #define TRAIN_PARAMETERS_
 #include <torch/torch.h>
+
 struct TrainParameters{
 public:
 	int64_t input_size;

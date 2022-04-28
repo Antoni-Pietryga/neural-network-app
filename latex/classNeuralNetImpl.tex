@@ -1,0 +1,67 @@
+\hypertarget{classNeuralNetImpl}{}\section{Neural\+Net\+Impl Class Reference}
+\label{classNeuralNetImpl}\index{Neural\+Net\+Impl@{Neural\+Net\+Impl}}
+
+
+The class responsible for Neural network implementation.  
+
+
+
+
+{\ttfamily \#include $<$neural\+\_\+net.\+h$>$}
+
+
+
+Inheritance diagram for Neural\+Net\+Impl\+:
+% FIG 0
+
+
+Collaboration diagram for Neural\+Net\+Impl\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNeuralNetImpl_aaccb7e8311ba6c9647824f86dfb627bc}{Neural\+Net\+Impl} (int64\+\_\+t input\+\_\+size, int64\+\_\+t hidden\+\_\+size, int64\+\_\+t num\+\_\+classes=2)
+\item 
+torch\+::\+Tensor \hyperlink{classNeuralNetImpl_ae392a0bba51173dd708f8522ece17dae}{forward} (torch\+::\+Tensor x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class responsible for Neural network implementation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNeuralNetImpl_aaccb7e8311ba6c9647824f86dfb627bc}\label{classNeuralNetImpl_aaccb7e8311ba6c9647824f86dfb627bc}} 
+\index{Neural\+Net\+Impl@{Neural\+Net\+Impl}!Neural\+Net\+Impl@{Neural\+Net\+Impl}}
+\index{Neural\+Net\+Impl@{Neural\+Net\+Impl}!Neural\+Net\+Impl@{Neural\+Net\+Impl}}
+\subsubsection{\texorpdfstring{Neural\+Net\+Impl()}{NeuralNetImpl()}}
+{\footnotesize\ttfamily Neural\+Net\+Impl\+::\+Neural\+Net\+Impl (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{input\+\_\+size,  }\item[{int64\+\_\+t}]{hidden\+\_\+size,  }\item[{int64\+\_\+t}]{num\+\_\+classes = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+Constructor. Initialize path and mode. 
+\begin{DoxyParams}{Parameters}
+{\em input\+\_\+size} & -\/ size of first layer. \\
+\hline
+{\em hidden\+\_\+size} & -\/ size of second layer. \\
+\hline
+{\em num\+\_\+classes} & -\/ oututput layer size. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNeuralNetImpl_ae392a0bba51173dd708f8522ece17dae}\label{classNeuralNetImpl_ae392a0bba51173dd708f8522ece17dae}} 
+\index{Neural\+Net\+Impl@{Neural\+Net\+Impl}!forward@{forward}}
+\index{forward@{forward}!Neural\+Net\+Impl@{Neural\+Net\+Impl}}
+\subsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily torch\+::\+Tensor Neural\+Net\+Impl\+::forward (\begin{DoxyParamCaption}\item[{torch\+::\+Tensor}]{x }\end{DoxyParamCaption})}
+
+Calculate output for tensor 
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ input tensor. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/neural\+\_\+net.\+h\item 
+src/neural\+\_\+net.\+cpp\end{DoxyCompactItemize}

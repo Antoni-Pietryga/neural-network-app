@@ -1,0 +1,72 @@
+\hypertarget{classTest}{}\section{Test Class Reference}
+\label{classTest}\index{Test@{Test}}
+
+
+The class responsible for twst pipeline.  
+
+
+
+
+{\ttfamily \#include $<$test.\+h$>$}
+
+
+
+Inheritance diagram for Test\+:
+% FIG 0
+
+
+Collaboration diagram for Test\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTest_a6eeaef1054e710158c2d48a6c3497a23}{Test} (string test\+\_\+path\+\_\+, const \hyperlink{structTrainParameters}{Train\+Parameters} \&params\+\_\+, string model\+\_\+path\+\_\+)
+\item 
+float \hyperlink{classTest_ae984138ce2da7b201d3fa97a4b775fb3}{test} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTest_a21a60879556addaa11427cb30b9be5fc}\label{classTest_a21a60879556addaa11427cb30b9be5fc}} 
+string {\bfseries test\+\_\+path}
+\item 
+\mbox{\Hypertarget{classTest_a857cf5151c5bd7e29d33569bd7237fde}\label{classTest_a857cf5151c5bd7e29d33569bd7237fde}} 
+string {\bfseries model\+\_\+path}
+\item 
+\mbox{\Hypertarget{classTest_a25806965ae8a4513ccad5ad31ce8a8df}\label{classTest_a25806965ae8a4513ccad5ad31ce8a8df}} 
+\hyperlink{structTrainParameters}{Train\+Parameters} {\bfseries params} = \hyperlink{structTrainParameters}{Train\+Parameters}(30, 20, 50, 0.\+001)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class responsible for twst pipeline. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTest_a6eeaef1054e710158c2d48a6c3497a23}\label{classTest_a6eeaef1054e710158c2d48a6c3497a23}} 
+\index{Test@{Test}!Test@{Test}}
+\index{Test@{Test}!Test@{Test}}
+\subsubsection{\texorpdfstring{Test()}{Test()}}
+{\footnotesize\ttfamily Test\+::\+Test (\begin{DoxyParamCaption}\item[{string}]{test\+\_\+path\+\_\+,  }\item[{const \hyperlink{structTrainParameters}{Train\+Parameters} \&}]{params\+\_\+,  }\item[{string}]{model\+\_\+path\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor. Initialize params and model\+\_\+path. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTest_ae984138ce2da7b201d3fa97a4b775fb3}\label{classTest_ae984138ce2da7b201d3fa97a4b775fb3}} 
+\index{Test@{Test}!test@{test}}
+\index{test@{test}!Test@{Test}}
+\subsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily float Test\+::test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Run test on selected file. \begin{DoxyReturn}{Returns}
+accuracy of predictions in selected file. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classTestBase}{Test\+Base}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/test.\+h\item 
+src/test.\+cpp\end{DoxyCompactItemize}
