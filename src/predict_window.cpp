@@ -47,8 +47,11 @@ void Predict_Window::on_pushButton_2_clicked()
         std::string test_root = ui->pred_dir->text().toStdString();
         //std::string save_path = ui->res_dir->text().toStdString();
 
+        int first_layer_neurons = ui->lineEdit_2->text().toInt();
+        int second_layer_neurons = ui->lineEdit_3->text().toInt();
+
         //Run prediction
-        TrainParameters params = TrainParameters(30, 20, 20, 0.001);
+        TrainParameters params = TrainParameters(first_layer_neurons, second_layer_neurons, 20, 0.001);
 
         //string save_path = "../net.pt";
         std::cout << "Testing...\n";
