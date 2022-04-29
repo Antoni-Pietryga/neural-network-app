@@ -6,6 +6,7 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QLineEdit>
 
 QT_BEGIN_NAMESPACE
 
@@ -17,9 +18,13 @@ public:
     QPushButton *pushButton_2;
     QPushButton *model_button;
     QPushButton *data_button;
+    QLabel *label_8;
+    QLabel *label_9;
     //QPushButton *data_button_2;
     QLabel *model_dir;
     QLabel *pred_dir;
+    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit_3;
     //QLabel *res_dir;
 
     void setupUi(QDialog *Predict_Window)
@@ -57,6 +62,20 @@ public:
         pred_dir->setObjectName(QString::fromUtf8("pred_dir"));
         pred_dir->setGeometry(QRect(250, 290, 531, 31));
         pred_dir->setText("../data/test.csv");
+        label_8 = new QLabel(Predict_Window);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(55, 370, 201, 20));
+        label_9 = new QLabel(Predict_Window);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setGeometry(QRect(55, 420, 201, 20));
+        lineEdit_2 = new QLineEdit(Predict_Window);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(235, 370, 113, 28));
+        lineEdit_2->setText("30");
+        lineEdit_3 = new QLineEdit(Predict_Window);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_3->setGeometry(QRect(235, 420, 113, 28));
+        lineEdit_3->setText("20");
         //res_dir = new QLabel(Predict_Window);
         //res_dir->setObjectName(QString::fromUtf8("res_dir"));
         //res_dir->setGeometry(QRect(250, 370, 531, 31));
@@ -75,6 +94,8 @@ public:
         pushButton_2->setText(QApplication::translate("Predict", "Run prediction >", nullptr));
         model_button->setText(QApplication::translate("Predict", "Model directory", nullptr));
         data_button->setText(QApplication::translate("Predict", "Prediction data directory", nullptr));
+        label_8->setText(QApplication::translate("Predict", "Neurons on first layer", nullptr));
+        label_9->setText(QApplication::translate("Predict", "Neurons on second layer", nullptr));
         //data_button_2->setText(QApplication::translate("Predict", "Results directory", nullptr));
         //model_dir->setText(QApplication::translate("Predict", "None", nullptr));
         //pred_dir->setText(QApplication::translate("Predict", "None", nullptr));
