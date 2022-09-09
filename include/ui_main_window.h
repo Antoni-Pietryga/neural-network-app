@@ -18,11 +18,14 @@ public:
     QWidget *centralwidget;
     QPushButton *train_button;
     QPushButton *predict_button;
+    QPushButton *dataset_button;
     QLabel *label;
     QLabel *label_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
-
+    /** 
+    Create window and put all objects in right places
+    */
     void setupUi(QMainWindow *Main_Window)
     {
         if (Main_Window->objectName().isEmpty())
@@ -32,10 +35,13 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         train_button = new QPushButton(centralwidget);
         train_button->setObjectName(QString::fromUtf8("train_button"));
-        train_button->setGeometry(QRect(60, 330, 151, 81));
+        train_button->setGeometry(QRect(325, 330, 150, 81));
         predict_button = new QPushButton(centralwidget);
         predict_button->setObjectName(QString::fromUtf8("predict_button"));
-        predict_button->setGeometry(QRect(590, 330, 151, 81));
+        predict_button->setGeometry(QRect(525, 330, 150, 81));
+        dataset_button = new QPushButton(centralwidget);
+        dataset_button->setObjectName(QString::fromUtf8("dataset_button"));
+        dataset_button->setGeometry(QRect(125, 330, 150, 81));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(270, 220, 321, 101));
@@ -68,6 +74,7 @@ public:
         Main_Window->setWindowTitle(QApplication::translate("Time_Series_Trainer_Predictor", "Time Series Trainer/Predictor", nullptr));
         train_button->setText(QApplication::translate("Time_Series_Trainer_Predictor", "Train", nullptr));
         predict_button->setText(QApplication::translate("Time_Series_Trainer_Predictor", "Predict", nullptr));
+        dataset_button->setText(QApplication::translate("Time_Series_Trainer_Predictor", "Create dataset", nullptr));
         label->setText(QApplication::translate("Time_Series_Trainer_Predictor", "What you want to do ?", nullptr));
         label_2->setText(QApplication::translate("Time_Series_Trainer_Predictor", "Time Series Trainer/Predictor", nullptr));
     } // retranslateUi

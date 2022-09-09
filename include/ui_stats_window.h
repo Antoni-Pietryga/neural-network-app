@@ -11,21 +11,24 @@ QT_BEGIN_NAMESPACE
 class Ui_Stats_Window
 {
 public:
-    QLabel *label;
+    QLabel *stats_label;
     QLabel *label_2;
 
+    /** 
+    Create window and put all objects in right places
+    */
     void setupUi(QDialog *Stats_Window)
     {
         if (Stats_Window->objectName().isEmpty())
             Stats_Window->setObjectName(QString::fromUtf8("Stats"));
         Stats_Window->resize(800, 600);
-        label = new QLabel(Stats_Window);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(210, 20, 341, 101));
+        stats_label = new QLabel(Stats_Window);
+        stats_label->setObjectName(QString::fromUtf8("stats_label"));
+        stats_label->setGeometry(QRect(210, 20, 341, 101));
         QFont font;
         font.setPointSize(28);
         font.setBold(true);
-        label->setFont(font);
+        stats_label->setFont(font);
         label_2 = new QLabel(Stats_Window);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(150, 140, 481, 361));
@@ -38,7 +41,7 @@ public:
     void retranslateUi(QDialog *Stats_Window)
     {
         Stats_Window->setWindowTitle(QApplication::translate("Stats", "Dialog", nullptr));
-        label->setText(QApplication::translate("Stats", "Training results", nullptr));
+        stats_label->setText(QApplication::translate("Stats", "Training results", nullptr));
         label_2->setText(QString());
     } // retranslateUi
 
@@ -50,4 +53,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_STATS_H
+#endif // UI_STATS_WINDOW_H

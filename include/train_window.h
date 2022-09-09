@@ -2,6 +2,7 @@
 #define TRAIN_WINDOW_H
 
 #include <QDialog>
+#include "train_params.h"
 namespace Ui {
 class Train_Window;
 }
@@ -21,14 +22,17 @@ private slots:
     /**
     Pick training data
     */
-    void on_data_button_clicked();
+    void on_dataset_button_clicked();
     /**
     	Start model trainig after clicked button
     */
-    void on_pushButton_2_clicked();
+    void on_train_button_clicked();
+
+	TrainParameters load_config_file();
 
 private:
     Ui::Train_Window *ui;
+	void log_message(string message);
 };
 
-#endif // TRAIN_H
+#endif // TRAIN_WINDOW_H

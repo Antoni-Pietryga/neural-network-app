@@ -20,7 +20,7 @@ public:
     explicit Stats_Window(QWidget *parent = nullptr);
     ~Stats_Window();
     /** Assigns the chart to a private field *cv
-        @param cv_ *chartView of accuracy/loss chart
+        @param cv_ *chartView of loss chart
     */
     void setCv(QChartView* cv_);
     /** Display chart on label_2 field
@@ -32,4 +32,4 @@ private:
     QChartView* cv;
 };
 
-#endif // STATS_H
+#endif // STATS_WINDOW_H

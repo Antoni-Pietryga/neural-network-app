@@ -1,46 +1,85 @@
-#pragma once
+#ifndef WINDOW_GENERATOR_H
+#define WINDOW_GENERATOR_H
 
 #include <iostream>
-#include <torch/torch.h>
-#include <string>
 #include <vector>
-/** @brief The class responsible for holding data container.
+#include <string>
+#include <fstream>
+#include <sstream>
+
+using namespace std;
+/** @brief The class responsible for generating dataset.
 */
-struct Data : torch::data::datasets::Dataset<Data> {
+class WindowGenerator{
 
 public:
-	/** The mode in which the dataset is loaded
-	*/
-    	enum Mode { kTrain, kTest };
-    	/** Constructor. Initialize path and mode.
-	@param root - file path.
-	@param mode - enum value, mode of dataset.  
-        */
-	explicit Data(const std::string& root, Mode mode = Mode::kTrain);
+/** Constructor. Read CSV data from file.
+@param path - path to csv file.
+**/
+    explicit WindowGenerator(const std::string& path);
+/** Function to get test data.
+@return pair of test targets and values.
+**/
+    pair<vector<vector<float>>, vector<vector<float>>> get_test();
+/** Function to get train data.
+@return pair of train targets and values.
+**/
+    pair<vector<vector<float>>, vector<vector<float>>> get_train();
+/** Function to get validation data.
+@return pair of validation targets and values.
+**/
+    pair<vector<vector<float>>, vector<vector<float>>> get_valid();
+/** Function to split data to windows.
+@param input_width - length of input vector.
+@param label_width - length of prediction vector.
+@param shift - shift of prediction value.
+@param column_name - column name on which we should create dataset.
+**/
+    void split_to_windows(int input_width, int label_width, int shift, string column_name);
+/** Function to get column index by column name.
+@param column_name - column name which index we looking for.
+@return column index.
+**/
+int get_column_index(string column_name);
+/** Function to split data to targets and values.
+@param input_width - length of input vector.
+@param label_width - length of prediction vector.
+@param shift - shift of prediction value.
+@param column_index - column index on which we should create dataset.
+@return pair of all targets and values vectors.
+**/
+pair<vector<vector<float>>, vector<vector<float>>> split_to_X_Y(int input_width, int label_width, int shift, int column_index);
 
-    	/** Returns the `Example` at the given `index`.
-	@param index - index of tensor. 
-	*/
-    	torch::data::Example<> get(size_t index) override;
+private:
+/** Function to read and load csv file.
+@param fname - file name.
+@return vector of loaded data as strings.
+**/
+vector<vector<string>> read_csv(string );
+/** Function to get column index by column name.
+@param column_name - column name which index we looking for.
+@return shuffled indexes.
+**/
+vector<int> shuffle_indexes(int size);
+/** Function to clear all vectors.
+**/
+void clear_vectors();
+/** Function to split data to train test and valid.
+**/
+void split_to_train_test_valid(vector<int> shuffled_indexes, vector<vector<float>> X, vector<vector<float>> Y);
 
-    	/** Returns the size of the dataset.
-	*/
-    	torch::optional<size_t> size() const override;
+    vector<vector<string>> data;
+    vector<vector<float>> test_X;
+    vector<vector<float>> train_X;
+    vector<vector<float>> valid_X;
 
-    	/** Returns all values stacked into a single tensor.
-	*/    	
-	const torch::Tensor& values() const;
-    	/** Returns true if this is the training mode.
-	*/
-    	bool is_train() const noexcept;
+    vector<vector<float>> test_y;
+    vector<vector<float>> train_y;
+    vector<vector<float>> valid_y;
 
-    	/** Returns all targets stacked into a single tensor.
-	*/
-    	const torch::Tensor& targets() const;
+    float train_size = 0.7;
+    float test_size = 0.15;
+    float valid_size = 0.15;
 
- private:
-    torch::Tensor values_;
-    torch::Tensor targets_;
-    Mode mode_;
 };
-
+#endif //WINDOW_GENERATOR_H

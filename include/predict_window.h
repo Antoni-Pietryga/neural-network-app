@@ -25,10 +25,16 @@ private slots:
     void on_data_button_clicked();
     /** Method runs prediction
     */
-    void on_pushButton_2_clicked();
+    void on_predict_button_clicked();
+    
+    /** Method let user pick directory of csv test file
+    */
+    void on_test_button_clicked();
 
 private:
+    
     Ui::Predict_Window *ui;
+	void log_message(std::string message);
 };
 
-#endif // PREDICT_H
+#endif // PREDICT_WINDOW_H

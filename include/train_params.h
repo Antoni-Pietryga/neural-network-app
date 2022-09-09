@@ -1,15 +1,18 @@
-#ifndef TRAIN_PARAMETERS_
-#define TRAIN_PARAMETERS_
-#include <torch/torch.h>
+#ifndef TRAIN_PARAMS_H
+#define TRAIN_PARAMS_H
+#include <iostream>
+using namespace std;
 
 struct TrainParameters{
 public:
-	int64_t input_size;
-    	int64_t hidden_size;
-    	int64_t num_classes = 2;
-    	int64_t batch_size = 100;
-    	size_t num_epochs;
-    	double learning_rate;
-	TrainParameters(int64_t input_size_, int64_t hidden_size_, int64_t num_epochs_, double learning_rate_);
+	int input_size;
+    int output_size;
+   	string column_name;
+    int shift = 6;
+   	int epoch_number;
+    double lr;
+    string dataset_dir;
+	
+	TrainParameters(int input_size_, int output_size_, int epoch_number_, double lr_, int shift, string column_name_, string dataset_dir_);
 };
 #endif

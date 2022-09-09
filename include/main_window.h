@@ -30,7 +30,12 @@ private slots:
     */
     void on_train_button_clicked();
 
+    /**
+    Pick prediction mode
+    */
+    void on_dataset_button_clicked();
+
 private:
     Ui::Main_Window *ui;
 };
-#endif // TIME_SERIES_TRAINER_PREDICTOR_H
+#endif // MAIN_WINDOW_H
