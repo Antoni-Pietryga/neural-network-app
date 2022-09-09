@@ -1,9 +1,11 @@
-
 #include "main_window.h"
 #include "ui_main_window.h"
 #include "predict_window.h"
 #include "train_window.h"
+#include "dataset_window.h"
+
 #include <QApplication>
+
 Main_Window::Main_Window(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::Main_Window)
@@ -33,5 +35,15 @@ void Main_Window::on_train_button_clicked()
     Train_Window train_win;
     train_win.setModal(true);
     train_win.exec();
+    show();
+}
+
+
+void Main_Window::on_dataset_button_clicked()
+{
+    hide();
+    Dataset_Window dataset_win;
+    dataset_win.setModal(true);
+    dataset_win.exec();
     show();
 }

@@ -6,7 +6,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <string>
-#include "test.h"
+#include "predict.h"
 #include "train_params.h"
 
 Predict_Window::Predict_Window(QWidget *parent) :
@@ -22,6 +22,11 @@ Predict_Window::~Predict_Window()
 }
 
 
+void Predict_Window::log_message(string message){
+	cout<<message<<endl;
+	ui->text_browser->append(QString::fromStdString(message));
+	qApp->processEvents();
+}
 
 void Predict_Window::on_model_button_clicked()
 {
@@ -37,10 +42,20 @@ void Predict_Window::on_data_button_clicked()
     ui->pred_dir->setText(filename);
 }
 
-
-
-void Predict_Window::on_pushButton_2_clicked()
+void Predict_Window::on_test_button_clicked()
 {
+    QString filename = QFileDialog::getOpenFileName(this, "Choose csv file", "C://");
+    ui->test_dir->setText(filename);
+}
+
+
+void Predict_Window::on_predict_button_clicked()
+{
+  string model_dir = ui->model_dir->text().toStdString();
+  string config_dir = ui->pred_dir->text().toStdString();
+  Predict prediction = Predict(model_dir, config_dir, ui);
+  float f = prediction.predict();
+  /*
     QString n = "None";
     if (ui->model_dir->text() != n && ui->pred_dir->text() != n ){
         std::string save_path = ui->model_dir->text().toStdString();
@@ -69,6 +84,5 @@ void Predict_Window::on_pushButton_2_clicked()
         QMessageBox messageBox;
         messageBox.critical(0,"Error","Wrong input");
         messageBox.setFixedSize(500,200);
-    }
+    }*/
 }
-

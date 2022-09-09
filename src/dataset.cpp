@@ -1,22 +1,55 @@
 #include "dataset.h"
 #include <vector>
-using namespace std;
-namespace {
+#include <algorithm>    // std::shuffle
+#include <random>       // std::default_random_engine
+#include <chrono>       // std::chrono::system_clock
 
-vector<vector<string>> read_csv(string fname){
+using namespace std;
+
+WindowGenerator::WindowGenerator(const std::string& path){
+  this->data = read_csv(path);
+}
+
+void WindowGenerator::split_to_windows(int input_width, int label_width, int shift, string column_name){
+    vector<vector<float>> X;
+    vector<vector<float>> Y;
+	vector<int> shuffled_indexes;
+    
+    int column_index = get_column_index(column_name);
+
+    if (column_index != -1) {
+		pair<vector<vector<float>>, vector<vector<float>>> X_Y = split_to_X_Y(input_width, label_width, shift, column_index);
+		X = X_Y.first;
+		Y = X_Y.second;
+    }
+    else {
+        std::cout << "Column name not found"<<endl;
+		// End application
+    }
+
+    shuffled_indexes = shuffle_indexes(X.size());
+	clear_vectors();
+	split_to_train_test_valid(shuffled_indexes, X, Y);
+
+	cout<<"train size: "<<this->train_X.size()<<" records"<<endl;
+	cout<<"test size: "<<this->test_X.size()<<" records"<<endl;
+	cout<<"valid size: "<<this->valid_X.size()<<" records"<<endl;
+}
+
+vector<vector<string>> WindowGenerator::read_csv(string fname){
 	vector<vector<string>> content;
 	vector<string> row;
 	string line, word;
- 
+
 	fstream file (fname, ios::in);
 	if(file.is_open())
 	{
 		while(getline(file, line))
 		{
 			row.clear();
- 
+
 			stringstream str(line);
- 
+
 			while(getline(str, word, ','))
 				row.push_back(word);
 			content.push_back(row);
@@ -28,47 +61,90 @@ vector<vector<string>> read_csv(string fname){
 	return content;
 }
 
-std::pair<torch::Tensor, torch::Tensor> read_data(const std::string& path, bool train) {
-  
-  vector<vector<string>> content = read_csv(path);
-  const auto num_samples = content.size() - content.size()%100;
-  auto targets = torch::empty(num_samples, torch::kInt64);
-  auto values = torch::empty({num_samples, 1, 500}, torch::kFloat);
-  int64_t label = 0;
-  for(int i=0;i<num_samples;i++){
-    if(i == 0)
-	continue;    
-    for(int j=0;j<content[i].size();j++){
-      if(j == 500){
-	float val = stod(content[i][j]);
-        targets[i] =  val;
-      }
-      else{
-	float val = stod(content[i][j]);
-        values[i][0][j] = val;
-      }
+int WindowGenerator::get_column_index(string column_name){
+	
+	int column_index = -1;
+    vector<string> v = this->data[0];
+    for(int i=0;i<v.size();i++){
+		if(v[i].compare(column_name) == 0){
+			column_index = i;
+			break;
+		}
+	}
+	return column_index;
+}
+
+pair<vector<vector<float>>, vector<vector<float>>> WindowGenerator::split_to_X_Y(int input_width, int label_width, int shift, int column_index){
+    vector<vector<float>> X;
+    vector<vector<float>> Y;
+	vector<float> x;
+	vector<float> y;
+	int size = this->data.size() - shift;
+
+	for(int i=1;i<size;i+=input_width){
+		if(i % shift != 1)
+			continue;
+		// X
+		for(int j=i;j<i+input_width;j++){
+			x.push_back(stof(this->data[j][column_index]));
+		}
+		// y
+		for(int j=i+shift;j<i+shift+label_width;j++){
+			y.push_back(stof(this->data[j][column_index]));
+		}
+
+		X.push_back(x);
+		Y.push_back(y);
+		x.clear();
+		y.clear();
+	}
+	return {X, Y};
+}
+
+vector<int> WindowGenerator::shuffle_indexes(int size){
+	vector<int> indexes;
+    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    default_random_engine e(seed);
+
+    for(int i=0;i<size;i++)
+		indexes.push_back(i);
+
+    shuffle(indexes.begin(), indexes.end(), e);
+	
+	return indexes;
+}
+
+void WindowGenerator::clear_vectors(){
+	this->train_X.clear();
+    this->train_y.clear();
+    this->test_X.clear();
+    this->test_y.clear();
+    this->valid_X.clear();
+    this->valid_y.clear();
+
+}
+
+void WindowGenerator::split_to_train_test_valid(vector<int> shuffled_indexes, vector<vector<float>> X, vector<vector<float>> Y){
+	for(int i=0;i<shuffled_indexes.size();i++){
+		if((float)i/shuffled_indexes.size() <= this->train_size){
+			this->train_X.push_back(X[shuffled_indexes[i]]);
+			this->train_y.push_back(Y[shuffled_indexes[i]]);
+		}
+		else if((float)i/shuffled_indexes.size() <= this->train_size+this->test_size){
+			this->test_X.push_back(X[shuffled_indexes[i]]);
+			this->test_y.push_back(Y[shuffled_indexes[i]]);
+		}
+		else if((float)i/shuffled_indexes.size() <= this->train_size+this->test_size+this->valid_size){
+			this->valid_X.push_back(X[shuffled_indexes[i]]);
+			this->valid_y.push_back(Y[shuffled_indexes[i]]);
+		}
+
     }
-  }
-  return {values, targets};
+
 }
-}  // namespace
+pair<vector<vector<float>>, vector<vector<float>>> WindowGenerator::get_train() { return {train_X, train_y}; }
 
-Data::Data(const std::string& root, Mode mode) : mode_(mode) {
-  auto data = read_data(root, mode == Mode::kTrain);
+pair<vector<vector<float>>, vector<vector<float>>> WindowGenerator::get_test() { return {test_X, test_y}; }
 
-  values_ = std::move(data.first);
-  targets_ = std::move(data.second);
-}
-
-torch::data::Example<> Data::get(size_t index){
-  return {values_[index], targets_[index]};
-}
-
-torch::optional<size_t> Data::size() const { return (int)targets_.sizes()[0]; }
-
-bool Data::is_train() const noexcept { return mode_ == Mode::kTrain; }
-
-const torch::Tensor& Data::values() const { return values_; }
-
-const torch::Tensor& Data::targets() const { return targets_; }
+pair<vector<vector<float>>, vector<vector<float>>> WindowGenerator::get_valid() { return {valid_X, valid_y}; }
 
